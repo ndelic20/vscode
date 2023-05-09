@@ -10,8 +10,8 @@ namespace Evaluation_Manager.Models
     {
         public int Grade
         {
-            get; set:
+            get; set;
         }
         }
     }
-}
+
