@@ -30,15 +30,16 @@
         {
             this.dgvStudents = new System.Windows.Forms.DataGridView();
             this.btnEvaluateStudent = new System.Windows.Forms.Button();
+            this.btnGenerateEvaluationReport = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStudents)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvStudents
             // 
             this.dgvStudents.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvStudents.Location = new System.Drawing.Point(1, 1);
+            this.dgvStudents.Location = new System.Drawing.Point(12, 1);
             this.dgvStudents.Name = "dgvStudents";
-            this.dgvStudents.Size = new System.Drawing.Size(915, 485);
+            this.dgvStudents.Size = new System.Drawing.Size(892, 485);
             this.dgvStudents.TabIndex = 0;
             this.dgvStudents.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.FrmStudents_Load);
             // 
@@ -46,17 +47,28 @@
             // 
             this.btnEvaluateStudent.Location = new System.Drawing.Point(776, 492);
             this.btnEvaluateStudent.Name = "btnEvaluateStudent";
-            this.btnEvaluateStudent.Size = new System.Drawing.Size(112, 35);
+            this.btnEvaluateStudent.Size = new System.Drawing.Size(128, 35);
             this.btnEvaluateStudent.TabIndex = 1;
             this.btnEvaluateStudent.Text = "Evaluiraj studenta";
             this.btnEvaluateStudent.UseVisualStyleBackColor = true;
             this.btnEvaluateStudent.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnGenerateEvaluationReport
+            // 
+            this.btnGenerateEvaluationReport.Location = new System.Drawing.Point(12, 492);
+            this.btnGenerateEvaluationReport.Name = "btnGenerateEvaluationReport";
+            this.btnGenerateEvaluationReport.Size = new System.Drawing.Size(130, 35);
+            this.btnGenerateEvaluationReport.TabIndex = 2;
+            this.btnGenerateEvaluationReport.Text = "Generiraj izvještaj";
+            this.btnGenerateEvaluationReport.UseVisualStyleBackColor = true;
+            this.btnGenerateEvaluationReport.Click += new System.EventHandler(this.btnGenerateEvaluationReport_Click);
             // 
             // FrmStudents
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(916, 534);
+            this.Controls.Add(this.btnGenerateEvaluationReport);
             this.Controls.Add(this.btnEvaluateStudent);
             this.Controls.Add(this.dgvStudents);
             this.Name = "FrmStudents";
@@ -71,5 +83,6 @@
 
         private System.Windows.Forms.DataGridView dgvStudents;
         private System.Windows.Forms.Button btnEvaluateStudent;
+        private System.Windows.Forms.Button btnGenerateEvaluationReport;
     }
 }
